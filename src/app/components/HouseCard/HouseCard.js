@@ -3,11 +3,15 @@ import './HouseCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faMapMarkerAlt, faBath, faSquare } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { findDetails } from '../../Redux/actions/houseRentAction';
 
 
 const HouseCard = ({ house }) => {
     const history = useHistory();
+    const dispatch = useDispatch();
     const handleOnclick = (id) => {
+        dispatch(findDetails(id));
         history.push(`/details/${id}`);
     }
     return (

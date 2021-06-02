@@ -11,3 +11,9 @@ export const loadHouse = () => {
             })
     }
 }
+export const findDetails = (payload) => {
+    return ({
+        type: 'HOUSE_DETAILS',
+        payload
+    })
+}
