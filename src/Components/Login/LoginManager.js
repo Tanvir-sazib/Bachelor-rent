@@ -10,8 +10,8 @@ export const initializeLoginFramework = () => {
 
 // Google Sign In Handler
 export const handleGoogleSignIn = () => {
-  const googleProvider = new firebase.auth.GoogleAuthProvider();
-    return firebase.auth().signInWithPopup(googleProvider)
+  var provider = new firebase.auth.GoogleAuthProvider();
+    return firebase.auth().signInWithPopup(provider)
     .then( (res) =>{
       const { displayName, email } = res.user;
       const signedInUser = { name: displayName, email: email, success:true };
@@ -43,45 +43,6 @@ export const handleSignOut = () => {
   });
 }
 
-
-// Create user with email and password
-export const createUserWithEmailAndPassword = (name, email, password) => {
-  return firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then( res => {
-    const newUserInfo = res.user;
-    newUserInfo.error = '';
-    newUserInfo.success = true;
-    updateUserName(name);
-    verifyEmail();
-    return newUserInfo;
-  })
-  .catch( error => {
-    console.log('dukeno killai');
-    const newUserInfo = {};
-    newUserInfo.error = error.message;
-    newUserInfo.success = false;
-    return newUserInfo;
-  });
-}
-
-
-// // sign in with email and password
-export const signInWithEmailAndPassword = (email, password) =>{
-  return firebase.auth().signInWithEmailAndPassword(email, password)
-  .then(res => {
-    const { displayName, email } = res.user;
-      const signInUser = { name: displayName, email: email, success: true, error: '' };
-    return signInUser;
-  })
-  .catch(function(error) {
-    const signInUser = {};
-    signInUser.error = error.message;
-    signInUser.success = false;
-    return signInUser;
-  });
-}
-
-
 // Update user name
 const updateUserName = name =>{
   const user = firebase.auth().currentUser;
@@ -94,15 +55,3 @@ const updateUserName = name =>{
     console.log(error)
   });
 }
-
-const verifyEmail = () => {
-  const userVerify = firebase.auth().currentUser;
-  userVerify
-    .sendEmailVerification()
-    .then(function () {
-      // Email sent.
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-};
