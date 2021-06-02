@@ -1,0 +1,23 @@
+.header-container{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    background-color: black;
+    overflow: hidden;
+    z-index: -1;
+}
+.header-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: 0;
+}
+.header-text{
+    z-index: 5;
+    color: white;
+    min-height: 100%;
+}

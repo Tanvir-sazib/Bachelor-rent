@@ -1,6 +1,6 @@
 const initialState = {
     allHouse: [],
-    houseDetails: [],
+    houseDetails: {},
     selectedHouse: []
 }
 const rentReducer = (state = initialState, action) => {
@@ -15,7 +15,7 @@ const rentReducer = (state = initialState, action) => {
         case "HOUSE_DETAILS": {
             const newState = {
                 ...state,
-                houseDetails: state.allHouse.filter(house => house.id === action.payload)
+                houseDetails: state.allHouse.find(house => house.id === action.payload)
             }
             return newState;
         }

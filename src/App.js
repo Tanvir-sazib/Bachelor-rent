@@ -4,8 +4,8 @@ import './app/utils/css/Colors.css'
 import HomePage from './app/pages/Home/HomePage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import HouseDetails from './app/pages/HouseDetails/HouseDetails';
-
-
+import data from '../src/fakeData'
+console.log(JSON.stringify(data))
 function App() {
   return (
     <Router>

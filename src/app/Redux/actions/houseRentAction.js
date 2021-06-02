@@ -1,7 +1,7 @@
 export const loadHouse = () => {
 
     return (dispatch, getState) => {
-        fetch('https://mocki.io/v1/21d10cb2-4e43-4282-b482-7539741146ae')
+        fetch('https://mocki.io/v1/fb6e4dc1-0a0f-4257-aa18-6d35f987d3d3')
             .then(res => res.json())
             .then(data => {
                 dispatch({
@@ -12,8 +12,11 @@ export const loadHouse = () => {
     }
 }
 export const findDetails = (payload) => {
-    return ({
-        type: 'HOUSE_DETAILS',
-        payload
-    })
+    return async (dispatch) => {
+        await dispatch({
+            type: 'HOUSE_DETAILS',
+            payload
+        })
+    }
+
 }

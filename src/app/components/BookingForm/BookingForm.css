@@ -1,0 +1,30 @@
+.form-container{
+    background-color: #cfcfcf;
+    width: 80%;
+    border-radius: 10px;
+}
+.input-field{
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 14px;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.input-btn{
+    width: 95%;
+    border: none;
+    background-color: #41adb7;
+    color: white;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+    margin: .5rem;
+}
+.input-btn:hover{
+    transform: scale(.9);
+    background-color: tomato;
+}

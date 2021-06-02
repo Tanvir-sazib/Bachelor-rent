@@ -54,7 +54,7 @@ const fakeData = [
         facilities: 'Gas, Generatoe, 24/7 water, Lift',
         available: '1-June-2021',
         contact: '90846322945',
-        image: 'https://i.pinimg.com/originals/ff/6c/a4/ff6ca407224a7c52ae61b418c37b7d23.jpg'
+        image: 'http://www.vistahomesbd.com/wp-content/uploads/re-listings/6dc5b_image_1.jpg'
     },
     {
         id: 4,
@@ -73,7 +73,7 @@ const fakeData = [
         facilities: 'Gas, Generatoe, 24/7 water, Lift',
         available: '1-June-2021',
         contact: '90846322945',
-        image: 'https://i.pinimg.com/originals/5a/2f/28/5a2f28b02663afa375fd1f66f1ad11ba.jpg'
+        image: 'https://www.primeempire.com/inc/storage/app/public/category/2019-01-05-5c304dbe091c9.jpg'
     },
     {
         id: 5,
@@ -111,7 +111,7 @@ const fakeData = [
         facilities: 'Gas, Generatoe, 24/7 water, Lift',
         available: '1-June-2021',
         contact: '90846322945',
-        image: 'https://i.pinimg.com/originals/e4/4c/48/e44c48ca10a563f967839c0e533f1d9f.jpg'
+        image: 'https://propertyfinderbd.com/public/uploads/property_thumb/bee3045878dadeefa9e6408e972857e2.jpg'
     },
     {
         id: 7,
@@ -168,7 +168,7 @@ const fakeData = [
         facilities: 'Gas, Generatoe, 24/7 water, Lift',
         available: '1-June-2021',
         contact: '90846322945',
-        image: 'https://lh3.googleusercontent.com/proxy/MWuBGI3Fe9_6MfyNER2kXiwUd0Bq_GpROa6YnlOvubHBVPMrAkgZxA8Gq8EtwhPT1YLBgdpc4DMrQUbV1FJrS9emiGu6xBOJjwsEDAnU3ZKC0S-SDxaMU7b6DPdPP8jC7os'
+        image: 'https://res.cloudinary.com/dccloudinary/image/upload/gallery/space-apartments1/1586241784Pey9c.jpg'
     },
 
 

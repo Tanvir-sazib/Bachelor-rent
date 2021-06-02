@@ -4,6 +4,7 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import HouseRent from '../../components/HouseRent/HouseRent';
 import Jumbotron from '../../components/Jumbotron/Jumbotron';
 import NavBar from '../../components/shared/NavBar';
+import Footer from '../../components/shared/Footer/Footer';
 import { loadHouse } from '../../Redux/actions/houseRentAction';
 import './HomePage.css'
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
             <Jumbotron />
             <HouseRent />
             <AboutUs />
+            <Footer />
         </div>
     );
 };
