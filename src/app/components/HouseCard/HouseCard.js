@@ -20,7 +20,7 @@ const HouseCard = ({ house }) => {
 
                     <h5 className='card-title' onClick={() => { handleOnclick(house.id) }}><b>{house.title}</b></h5>
 
-                    <p className='text-secondary'><FontAwesomeIcon icon={faMapMarkerAlt} /> {house.address}</p>
+                    <p className='text-secondary'><FontAwesomeIcon icon={faMapMarkerAlt} /> <small>{house.address}</small></p>
 
                     <div className="basic-info d-flex justify-content-around">
                         <div className="bed-room">
