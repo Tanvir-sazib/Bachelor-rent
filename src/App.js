@@ -9,7 +9,6 @@ import PrivateRoute from './Components/Dashboard/PrivateRoute/PrivateRoute';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 export const UserContext = createContext();
-export const AdminContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
