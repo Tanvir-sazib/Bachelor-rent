@@ -3,15 +3,18 @@ import './App.css';
 import './app/utils/css/Colors.css'
 import HomePage from './app/pages/Home/HomePage';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import data from './fakeData'
+import HouseDetails from './app/pages/HouseDetails/HouseDetails';
 
-console.log(JSON.stringify(data));
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route path='/' exact>
           <HomePage />
+        </Route>
+        <Route path='/details/:id'>
+          <HouseDetails />
         </Route>
       </Switch>
     </Router>

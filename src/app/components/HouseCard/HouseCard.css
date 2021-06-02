@@ -12,6 +12,11 @@
 }
 .card-title{
     color: rgb(83, 83, 83);
+    transition: 0.3s;
+}
+.card-title:hover{
+    color: tomato;
+    text-decoration: underline;
 }
 .card-img{
     height: 12rem;

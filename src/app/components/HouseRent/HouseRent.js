@@ -6,10 +6,10 @@ const HouseRent = () => {
     const houses = useSelector((state) => {
         return state.houses.allHouse;
     })
-    console.log(houses);
+
     return (
         <div className='house-rent-container py-5'>
-            <div className="content-title text-center">
+            <div className="content-title py-4 text-center">
                 <h2 className='txt-brand'>house rent</h2>
                 <h5>Discover the latest Rent available today</h5>
             </div>
