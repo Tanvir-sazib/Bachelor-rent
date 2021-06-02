@@ -24,18 +24,22 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <PrivateRoute path="/dashboard">
-              <Dashboard />
-            </PrivateRoute>
-            <PrivateRoute path="/addHouse">
-              <AddHouse />
-            </PrivateRoute>
             <PrivateRoute path="/bookingList">
               <BookingList />
             </PrivateRoute>
             <PrivateRoute path="/addRentHouse">
               <AddRentHouse />
             </PrivateRoute>
+            {/* Admin  */}
+            <Route path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route path="/addHouse">
+              <AddHouse />
+            </Route>
+            <Route path="/bookingList">
+              <BookingList />
+            </Route>
           </Switch>
         </Router>
       </UserContext.Provider>

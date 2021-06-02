@@ -37,6 +37,9 @@ const Header = () => {
                         <Nav.Link className="text-dark" href="/home">Contact Us</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
+                        <Nav.Link className="text-dark" href="/login">Sign in</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
 
                         {/* {
                             loggedInUser.email ?
