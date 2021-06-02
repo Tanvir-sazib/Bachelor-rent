@@ -1,0 +1,20 @@
+.about-container{
+    background: #fafafa;
+}
+.about-content{
+    background: rgb(196, 180, 177);
+    border-top-right-radius:200px; 
+    position:relative;
+    overflow: hidden;
+    min-height: 25rem;
+}
+
+.about-content img{
+    position: absolute;
+    top: 0;
+    right:0;
+    opacity: 0.6;
+}
+.about-details{
+    border-left: 5px solid tomato;
+}

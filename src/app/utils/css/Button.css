@@ -1,0 +1,13 @@
+.btn-brand{
+    border: none;
+    background-color: #41adb7;
+    color: white;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+}
+.btn-brand:hover{
+    transform: scale(1.1);
+    background-color: tomato;
+}

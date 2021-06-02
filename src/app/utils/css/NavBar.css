@@ -1,0 +1,12 @@
+.navbar-nav a{
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-nav a:hover{
+    color:rgba(110, 49, 24, 0.904) !important;
+}
+.navbar-light{
+    background:linear-gradient(
+        293deg
+        , rgba(68, 172, 185, 0.247) 0%, rgba(21, 68, 70, 0.918) 100%) !important;
+}
