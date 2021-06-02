@@ -9,8 +9,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import {
     handleGoogleSignIn,
-    initializeLoginFramework
-    
+    initializeLoginFramework    
 } from './LoginManager';
 import firebase from "firebase/app";
 import { UserContext } from '../../App';

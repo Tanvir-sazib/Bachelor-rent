@@ -12,13 +12,12 @@ import {
   faSignOutAlt,
   faTasks,
 } from '@fortawesome/free-solid-svg-icons';
-import { AdminContext, UserContext } from '../../../App';
+import { UserContext } from '../../../App';
 
 const Sidebar = () => {
 
   // Admin context from App.js
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  const [isAdmin, setIsAdmin] = useContext(AdminContext);
 
   const signOut = () => {
     setLoggedInUser({});
@@ -28,9 +27,9 @@ const Sidebar = () => {
     <div className='sidebar d-flex flex-column justify-content-between py-5 px-4'>
       <ul className='list-unstyled'>
 
-        {!loggedInUser ? 
+        {loggedInUser && 
         // For Admin Only
-          (<>
+          <>
             <li>
               <Link to='/bookingList' className='text-dark'>
                 <FontAwesomeIcon icon={faHdd} /> <span>Booking List</span>
@@ -51,25 +50,12 @@ const Sidebar = () => {
                 <FontAwesomeIcon icon={faUserPlus} /> <span>My Rent</span>
               </Link>
             </li>
-          </>):
-          // For User Only
-            (<>
-            <li>
-              <Link to='/addHouse' className='text-dark'>
-                <FontAwesomeIcon icon={faHdd} /> <span>Booking List</span>
-              </Link>
-            </li>
             <li>
               <Link to='/addRentHouse' className='text-dark'>
                 <FontAwesomeIcon icon={faPlus} /> <span>Add Rent House</span>
               </Link>
             </li>
-            <li>
-              <Link to='/addHouse' className='text-dark'>
-                <FontAwesomeIcon icon={faUserPlus} /> <span>My Rent</span>
-              </Link>
-            </li>
-          </>)
+          </>
         }
       </ul>
     </div>
